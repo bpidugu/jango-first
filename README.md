@@ -1,5 +1,17 @@
 # jango-first
-
+-…or create a new repository on the command line
+echo "# jango-first" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/bpidugu/jango-first.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/bpidugu/jango-first.git
+git branch -M main
+git push -u origin main
+## Steps
 - python -m pip install Django
 - django-admin startproject smartnotes . 
 - python manage.py runserver
@@ -34,3 +46,12 @@
 -  Notes.objects.filter(text__icontains="Django")
 -  Notes.objects.exclude(text__icontains="Django")
 -  Notes.objects.filter(text__icontains="Django").exclude(title__icontains='Django')
+
+## Dynamic Template
+- create list in notes->views.py
+- class based views
+## Static files
+- create folder 'static' under root branch
+-  add STATICFILES_DIRS in settings.py
+-  To add base template:  BASE_DIR / 'static/templates' in settings.py file
+-  add bootstrap css in base.html

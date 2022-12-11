@@ -55,3 +55,27 @@ git push -u origin main
 -  add STATICFILES_DIRS in settings.py
 -  To add base template:  BASE_DIR / 'static/templates' in settings.py file
 -  add bootstrap css in base.html
+
+## CRUD
+- CreateView
+
+
+
+
+
+ID: 6046220e-31ae-4b12-ae6b-77a7c0cfd4e8
+CREATE_TIME: 2022-12-09T04:59:32+00:00
+DURATION: 2M4S
+SOURCE: gs://antioch-dev-369805_cloudbuild/source/1670561972.374135-4c4af7a9f5d1428abed32e506fcf6055.tgz
+IMAGES: gcr.io/antioch-dev-369805/antimage (+1 more)
+STATUS: SUCCESS
+
+
+
+TySn6Q2C6DFv9ldtR7dtKsFoDfbwWY
+
+
+gcloud run services update antiochcms-cloud \
+  --platform managed \
+  --region $REGION \
+  --image gcr.io/${PROJECT_ID}/antimage
